@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `login` (
+  `user_id` VARCHAR(128) NOT NULL PRIMARY KEY,
+  `user_name` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `student_id` VARCHAR(50),
+  `telephone` VARCHAR(30),
+  `email` VARCHAR(255) NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
